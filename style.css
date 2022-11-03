@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bgc-grey{
+    background-color:grey;
+}
+.bgc-violet{
+    background-color: purple
+    ;
+}
+.bgc-dark-green{
+    background-color: forestgreen;
+}
+.bgc-light-green{
+    background-color: lightgreen;
+}
+.bgc-light-blue{
+    background-color: lightskyblue;
+}
+.bgc-dark-blue{
+    background-color: darkblue;
+}
+.bgc-orange{
+    background-color: orange
+    ;
+}
+.bgc-red{
+    background-color: red;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+body{
+    display:grid;
+    grid-template-rows:repeat(4, 1fr);
+    grid-template-columns:repeat(6, 1fr) ;
+    grid-template-areas: 
+    "courrier courrier calendrier calendrier photo container"
+    "skype contact bourse bourse explorer aide"
+    "lecture drive . . cartes sante"
+    "bureau bureau . . actu actu";
+    gap: 10px;
+    width: 600px;
+    height: 400px;
+    color:white;
+
+}
+
+
+.container{
+    grid-area: container;
+    display: grid;
+}
+
+.courrier{
+    grid-area: courrier;
+}
+.calendrier{
+    grid-area:calendrier;
+}
+.photo{
+    grid-area:photo;
+}
+.skype{
+    grid-area:skype;
+}
+.contact{
+    grid-area:contact;
+}
+.bourse{
+    grid-area:bourse;
+}
+.explorer{
+    grid-area:explorer;
+}
+.aide{
+    grid-area:aide;
+}
+.lecture{
+    grid-area:lecture;
+}
+.drive{
+    grid-area:drive;
+}
+.cartes{
+    grid-area:cartes;
+}
+.sante{
+    grid-area:sante;
+}
+.bureau{
+    grid-area:bureau;
+}
+.actu{
+    grid-area:actu;
+}
+
+ol {
+
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:repeat(2,1fr) ;
+    grid-template-areas: 
+    "un deux"
+    "trois quatre" ;
+    gap: 10px;
+    
+    
+}
+
+.un{
+    grid-area:un ;
+}
+.deux{
+    grid-area:deux;
+}
+.trois{
+    grid-area:trois;
+}
+.quatre{
+    grid-area:quatre;
+}
